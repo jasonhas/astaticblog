@@ -40,7 +40,7 @@ const Navbar = () => {
                 isOpen
                  ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
                  : "fixed left-[-100%] top-0 p-10 ease-in-out duration-800"
-            }>  
+            }>      <div className='flex justify-start font-bold text-2xl'>static blog</div>
                     <div className='flex w-full items-center justify-end'>
                         <div onClick={handleToggle} className='cursor-pointer'>
                             <AiOutlineCloseCircle className='text-3xl'/>
