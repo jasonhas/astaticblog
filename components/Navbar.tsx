@@ -1,7 +1,11 @@
 'use client'
 import Link from 'next/link'
 import { AiOutlineMenu, AiOutlineCloseCircle } from 'react-icons/ai'
+import { Poppins  } from 'next/font/google'
 import { useState } from 'react'
+
+const poppins = Poppins({subsets:['latin'],weight:'500'})
+
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +22,8 @@ const Navbar = () => {
         {name:"Contact",link:"/contact"},
     ]
     return (
-        <div className="shadow-md w-full fixed top-0 left-0">
-            <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+        <nav className="w-full fixed h-24 bg-white">
+            <div className='flex justify-between items-center w-full h-full px-4 2xl:px-16'>
                 <div className='font-bold text-2xl'>
                     static blog
                 </div>
@@ -59,7 +63,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
 
     )
 }

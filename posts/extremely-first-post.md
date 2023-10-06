@@ -2,6 +2,8 @@
 title: The Way Back Machine
 description: Old is new again
 date: 09-12-2023
+mainImage: "/images/man-cartoon-frustrated-at-computer.png"
+imageAlt: "A Day of frustration at the computer"
 ---
 
 ## This is going to be Interesting
