@@ -1,6 +1,7 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 import { PostMetadata } from './PostMetadata';
+import { DateTime } from 'luxon';
 
 const getPostMetadata = (): PostMetadata[] => {
     const folder = "posts/";
@@ -21,6 +22,11 @@ const getPostMetadata = (): PostMetadata[] => {
       }
     })
 
+    const sortBlogPostsByDate = posts.sort((a, b) => {
+      const beforeDate:any = DateTime.fromFormat(a.date, 'MM-dd-yyyy')
+      const afterDate:any = DateTime.fromFormat(b.date,'MM-dd-yyyy')
+      return afterDate - beforeDate
+    })
 
     return posts
   }

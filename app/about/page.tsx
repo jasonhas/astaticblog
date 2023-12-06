@@ -1,9 +1,9 @@
 const About = () => {
 
     return (
-        <div className="pt-20 max-w-7xl justify-between mx-auto">
+        <div className="py-15 max-w-7xl justify-between mx-auto">
             <h1 className="text-3xl font-bold text-center">About Me</h1>
-            <div className="py-5 px-4 prose lg:prose-xl">
+            <div className="py-5 px-4 prose md:prose-xl">
                 <p>Here is something for you to ponder. </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat interdum varius sit amet mattis. Tortor consequat id porta nibh. Lectus urna duis convallis convallis tellus id. Malesuada fames ac turpis egestas. Sit amet justo donec enim diam vulputate ut pharetra sit. Fringilla est ullamcorper eget nulla facilisi. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Curabitur vitae nunc sed velit. Vel fringilla est ullamcorper eget nulla facilisi etiam. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Risus sed vulputate odio ut enim.</p>
 

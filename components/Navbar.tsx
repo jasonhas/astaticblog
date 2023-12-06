@@ -22,7 +22,7 @@ const Navbar = () => {
         {name:"Contact",link:"/contact"},
     ]
     return (
-        <nav className="w-full fixed h-24 bg-white">
+        <nav className="w-full fixed h-24 bg-white z-[1]">
             <div className='flex justify-between items-center w-full h-full px-4 2xl:px-16'>
                 <div className='font-bold text-2xl'>
                     static blog
@@ -30,7 +30,7 @@ const Navbar = () => {
                 <div className='text-2xl absolute right-8 top-6 cursor-pointer md:hidden' onClick={handleToggle}>
                     <AiOutlineMenu className={`${isOpen ? 'hidden': ''}`}/>
                 </div>
-                <ul className="md:flex md:items-center md:pb-0 absolute md:static pb-12 gap-8 bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in hidden">
+                <ul className="md:flex md:items-center md:pb-0 absolute md:static pb-12 gap-8 bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 pr-8 transition-all duration-500 ease-in hidden">
                         {
                             Links.map((link) =>(
                             <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
@@ -38,7 +38,6 @@ const Navbar = () => {
                             </li>                                
                             ))
                         }
-                        <button className='bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-blue-500'>btn</button>
                 </ul>
                 <div className={
                 isOpen

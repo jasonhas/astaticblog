@@ -2,6 +2,8 @@
 title: This is my first post
 description: Nothing like some good old home cooking.
 date: 09-25-2023
+mainImage: "/images/rainy-street.jpeg"
+imageAlt: "Rainy Streets"
 ---
 
 ## Welcome to the show

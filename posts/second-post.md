@@ -2,6 +2,8 @@
 title: This is my second post
 description: More Blogging and more fun.
 date: 09-26-2023
+mainImage: "/images/man-cartoon-frustrated-at-computer.png"
+imageAlt: "A Day of frustration at the computer"
 ---
 
 ## Today is just one of those days
